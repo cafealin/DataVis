@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
+
+.bold {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.headings {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bodytext {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    margin: 0;
+}
+
+#background-image {
+    width: 100%;
+    transform: scale(1.02);
+    filter: blur(2px) brightness(50%);
+}
+
+#main-text-border {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+#main-text {
+    position: relative;
+    left: -50%;
+    font-size: 3vw;
+    color: azure;
+}
+
+#down-arrow {
+    position: absolute;
+    top: 80%;
+    left: 47.5%;
+    animation: moveUpandDown 3s linear infinite alternate;
+    width: 3vw;
+    transform: rotate(90deg);
+    filter: invert(100%);
+}
+
+@keyframes moveUpandDown {
+    0% {
+      left: 47.5%;
+      top: 80%;
+    }
+  
+    25% {
+      left: 47.5%;
+      top: 85%;
+    }
+  
+    50% {
+      left: 47.5%;
+      top: 80%;
+    }
+  
+    75% {
+      left: 47.5%;
+      top: 85%;
+    }
+  
+    100% {
+      left: 47.5%;
+      top: 80%;
+    }
+  }
+
+  .filter-bar {
+      height: 100vh;
+      overflow: hidden;
+      padding: 0;
+  }
+
+  .bg-custom {
+      background-color: #d4d3d3;
+  }
+
+  /* #option-heading {
+      border-bottom: rgb(110, 110, 110);
+  } */
+
+  .filter-bar .drop-bar {
+      display: none;
+  }
+
+  .subheader {
+      width: 100%;
+      border-bottom: 1px solid rgb(158, 156, 156);
+  }
